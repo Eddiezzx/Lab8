@@ -22,3 +22,4 @@ find_runs=function(x,k)
 }
 debug(find_runs)
 find_runs(c(1,0,0,1,1,0,1,1,1),2)
+#####
