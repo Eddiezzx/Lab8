@@ -8,11 +8,11 @@ prime = function(n) {
     return(TRUE)}
   else
   {
-    for (i in 2:(sqrt(n))) {
-      if (n %% i == 0) {
-        return(FALSE)
+      for (i in 2:(sqrt(n))) {
+        if (n %% i == 0) {
+          return(FALSE)
+        }
       }
-    }
     return(TRUE)
   }
 }
@@ -20,7 +20,7 @@ prime = function(n) {
 #2
 
 find_runs = function(x, k)
-{
+  {
   n = length(x)
   runs = NULL
   for (i in 1:(n - k + 1)) {
@@ -29,7 +29,7 @@ find_runs = function(x, k)
     }
   }
   return(runs)
-}
+  }
 
 find_runs(c(1, 0, 0, 1, 1, 0, 1, 1, 1), 2)
 
@@ -49,3 +49,4 @@ sort_vec = function(x) {
   }
   return(x)
 }
+
